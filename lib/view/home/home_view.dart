@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:keymo_flutter/view/component/my_appbar.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: MyAppBar(),
     );
   }
 }

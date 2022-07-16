@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Colors.teal,
         ),
+        appBarTheme: const AppBarTheme(
+          color: Colors.teal,
+        ),
       ),
       initialRoute: HomeView.id,
       routes: {
