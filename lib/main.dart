@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:keymo_flutter/view/home/add_keyword_view.dart';
 import 'package:keymo_flutter/view/home/home_view.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        primaryColor: Colors.teal,
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Colors.teal,
         ),
@@ -21,7 +23,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: HomeView.id,
       routes: {
-        HomeView.id: (context) => HomeView(),
+        HomeView.id: (context) => const HomeView(),
+        AddKeywordView.id: (context) => const AddKeywordView(),
       },
     );
   }
